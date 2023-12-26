@@ -65,6 +65,8 @@ body {
 .index-info > div > div:nth-of-type(2) {width: 40%;}
 .index-info > div > div:last-of-type {text-align: right;}
 .index-info > div img {position: absolute;right: 10%;top: 0;display: none;}
+.comm-show .prop {display: none;}
+.prop-show .comm {display: none;}
 
 .m-scroll{display:flex;position:absolute;margin:auto;overflow:hidden;z-index:1;bottom:-30px;width:100%}
 .m-scroll__title{display:flex;align-items:center;justify-content:flex-start;width:100%;height:100%;white-space:nowrap}

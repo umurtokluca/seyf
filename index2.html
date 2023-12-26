@@ -6,6 +6,9 @@
     <title>index | seyf. stage & prop director</title>
 
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="script/script.js"></script>
 </head>
 <body>
@@ -28,41 +31,46 @@
     
     <div class="index-container">
         <div class="index-nav">
-            <div class="aktif">all</div>
-            <div>commercial</div>
-            <div>prop</div>
+            <div class="all-title aktif" onclick="fnIndex('all');">all</div>
+            <div class="comm-title" onclick="fnIndex('comm');">commercial</div>
+            <div class="prop-title" onclick="fnIndex('prop');">prop</div>
         </div>
         <div class="index-info">
-            <div id="comm">
+            <div class="comm">
                 <div>netflix</div>
                 <div>kus ucusu</div>
                 <div>2023</div>
+                <img src="img/100.jpg" alt="">
             </div>
-            <div id="prop">
+            <div class="prop">
                 <div>pixar</div>
                 <div>star wars</div>
                 <div>2023</div>
+                <img src="img/100.jpg" alt="">
             </div>
-            <div id="comm">
+            <div class="comm">
                 <div>bud</div>
                 <div>be a king</div>
                 <div>2023</div>
+                <img src="img/100.jpg" alt="">
             </div>
-            <div id="prop">
+            <div class="prop">
                 <div>netflix</div>
                 <div>do not disturb</div>
                 <div>2023</div>
                 <img src="img/100.jpg" alt="">
             </div>
-            <div id="comm">
+            <div class="comm">
                 <div>pixar</div>
                 <div>toys</div>
                 <div>2023</div>
+                <img src="img/100.jpg" alt="">
             </div>
-            <div id="prop">
+            <div class="prop">
                 <div>solomon bike</div>
                 <div>kus ucusu</div>
                 <div>2023</div>
+                <img src="img/100.jpg" alt="">
             </div>
         </div>
     </div>
