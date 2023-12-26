@@ -13,16 +13,13 @@ $(document).ready(function() {
   });
 
   $(document).ready(function() {
-    // The hover function takes two callbacks - one for mouseenter and one for mouseleave
     $('.index-info > div').hover(
       function() {
-        // This code runs when the mouse enters the element
         $(this).find("div").css('opacity', '1');
         $(this).find("img").css('display', 'block');
       },
       function() {
-        // This code runs when the mouse leaves the element
-        $(this).find("div").css('opacity', '.5'); // Clear the background color
+        $(this).find("div").css('opacity', '.5');
         $(this).find("img").css('display', 'none');
       }
     );
