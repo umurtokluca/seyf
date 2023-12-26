@@ -36,7 +36,7 @@ body {
     margin: 0 auto;
 }
 
-.nav {margin-top: -45px;}
+.nav {margin-top: -45px;float: left;}
 .nav > ul {}
 .nav > ul > li {list-style: none;margin-bottom: 20px;}
 .nav > ul > li > a {font-family: 'Inter', sans-serif;color: #fff;opacity: .5;text-decoration: none;size: 17px;font-weight: 500;}
@@ -46,7 +46,7 @@ body {
 .video-container > a {position: absolute;}
 .video-container > a:nth-of-type(1) {top: 0;left: 0;}
 .video-container > a:nth-of-type(2) {top: 0;right: 0;}
-.video-container > a:nth-of-type(3) {top: 30%;}
+.video-container > a:nth-of-type(3) {top: 30%;left: 40%;}
 .video-container > a:nth-of-type(4) {bottom: 0;left: 0;}
 .video-container > a:nth-of-type(5) {bottom: 0;right: 0;}
 
@@ -62,3 +62,7 @@ body {
 .m-scroll__title > div{display:flex;animation:scrollText 50s infinite linear}
 .m-scroll__title h2{margin:0;font-size:328px;color:#bcaf87;font-family: 'Neue Haas Grotesk Display Pro', sans-serif;color: #fff;font-weight:600;cursor:default}
 @keyframes scrollText { from {transform:translateX(0%)} to {transform:translateX(-50%)}}
+
+.nav-info-container {}
+.nav-info {}
+.nav-sm {}
