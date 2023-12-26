@@ -6,6 +6,9 @@
     <title>seyf. stage & prop director</title>
 
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="script/script.js"></script>
 </head>
 <body>
@@ -26,12 +29,15 @@
         </nav>
     </div>
 
-    <div class="video-container">
-        <a href=""><img src="img/video2.jpg" alt=""></a>
-        <a href=""><img src="img/video1.jpg" alt=""></a>
-        <a href=""><img src="img/video3.jpg" alt=""></a>
-        <a href=""><img src="img/video4.jpg" alt=""></a>
-        <a href=""><img src="img/video5.jpg" alt=""></a>
-    </div>
+    <main>
+        <div class="video-container">
+            <a data-set="2" href=""><img src="img/video2.jpg" alt=""></a>
+            <a data-set="3" href=""><img src="img/video1.jpg" alt=""></a>
+            <a data-set="4" href=""><img src="img/video3.jpg" alt=""></a>
+            <a data-set="3" href=""><img src="img/video4.jpg" alt=""></a>
+            <a data-set="2" href=""><img src="img/video5.jpg" alt=""></a>
+        </div>
+    </main>
+
 </body>
 </html>
