@@ -412,7 +412,7 @@ body {
     .nav-info-container {
         width: 80%;
         flex-direction: column;
-        margin: 200px auto 0;
+        margin: 150px auto 0;
     }
 
     .nav-info-container > div {
