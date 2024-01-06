@@ -14,8 +14,13 @@
     margin: auto;
 }
 
-.hide {display: none;}
-.show {display: block;}
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
 
 body {
     background-color: #0D0D12;
@@ -28,6 +33,7 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto;
+    z-index: 99;
 }
 
 .logo {
@@ -41,28 +47,131 @@ body {
     right: 0;
 }
 
-.nav {float: right;margin-top: 10px;}
-.nav > ul {}
-.nav > ul > li {display: inline-block;list-style: none;margin-right: 16px;}
-.nav > ul > li:last-of-type {margin-right: 0;}
-.nav > ul > li > a {font-family: 'Neue Haas Grotesk Display Pro';color: #fff;opacity: .5;text-decoration: none;size: 20px;font-weight: 500;}
-.nav > ul > li > a:hover, .nav-aktif {opacity: 1 !important;}
+.nav {
+    float: right;
+    margin-top: 10px;
+}
 
-.video-container {position: relative;height: 80vh;width: 80%;margin: 0 auto;top: 120px;}
-.video-container > a {position: absolute;}
-.video-container > a:nth-of-type(1) {top: 0;left: 0;}
-.video-container > a:nth-of-type(2) {top: 0;right: 0;}
-.video-container > a:nth-of-type(3) {top: 30%;left: 40%;}
-.video-container > a:nth-of-type(4) {bottom: 0;left: 0;}
-.video-container > a:nth-of-type(5) {bottom: 0;right: 0;}
+.nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 16px;
+}
 
-.index-container {position: relative;font-family: 'Neue Haas Grotesk Display Pro', sans-serif;color: #fff;font-size: 18px;width: 90%;margin: 280px auto 0;}
-.index-nav {display: flex;margin-bottom: 32px;}
-.index-nav > div {cursor: pointer;opacity: .5;}
-.index-nav > div:hover, .aktif {opacity: 1 !important;}
-.index-nav > div:nth-of-type(2) {margin: 0 24px;}
+.nav > ul > li:last-of-type {
+    margin-right: 0;
+}
 
-.index-info {width: 58%;max-height: 330px;overflow: auto;}
+.nav > ul > li > a {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    color: #fff;
+    opacity: .5;
+    text-decoration: none;
+    size: 20px;
+    font-weight: 500;
+}
+
+.nav > ul > li > a:hover, .nav-aktif {
+    opacity: 1 !important;
+}
+
+.nav .menu-close, .nav .logo, .menu-btn {
+    display: none;
+}
+
+.video-main {
+    position: relative;
+    margin-top: 150px;
+}
+
+.video-main span {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    display: block;
+    margin-bottom: -20px;
+    margin-left: 50px;
+}
+
+.video-main > .video-container:first-of-type {
+    padding-left: 300px;
+}
+
+.video-container {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+    width: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.video-container::-webkit-scrollbar {
+    display: none
+}
+
+.video-container > a {
+    margin-right: 124px;
+    display: inline-block;
+    float: none!important;
+    width: 30%;
+}
+
+.video-container > a img {
+    display: none;
+}
+
+.index-container {
+    position: relative;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    width: 90%;
+    margin: 220px auto 0;
+}
+
+.index-nav {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.index-nav > div {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.index-nav > div:hover, .aktif {
+    opacity: 1 !important;
+}
+
+.index-nav > div:nth-of-type(2) {
+    margin: 0 24px;
+}
+
+.index-info-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 12px 20px 12px 0;
+    width: 55%;
+}
+
+.index-info-top > div {
+    width: 222px;
+}
+
+.index-info {
+    width: 58% !important;
+    max-height: 330px;
+    overflow: auto;
+}
+
 .index-info::-webkit-scrollbar {
     width: 3px;
 }
@@ -77,21 +186,317 @@ body {
     background-color: #F04438;
 }
 
-.index-info > div {display: flex;justify-content: space-between;margin-bottom: 12px;padding: 12px 0;}
-.index-info > div > div {opacity: .5;width: 222px;}
-.index-info > div img {position: absolute;right: 0;top: 0;display: none;}
-.comm-show .prop {display: none;}
-.prop-show .comm {display: none;}
+.index-info .item > a {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 12px 20px 12px 0;
+    color: #fff;
+    text-decoration: none;
+}
 
-.m-scroll{display:flex;position:absolute;margin:auto;overflow:hidden;z-index:1;bottom:-30px;width:100%}
-.m-scroll__title{display:flex;align-items:center;justify-content:flex-start;width:100%;height:100%;white-space:nowrap}
-.m-scroll__title > div{display:flex;animation:scrollText 50s infinite linear}
-.m-scroll__title h2{margin:0;font-size:328px;color:#bcaf87;font-family: 'Neue Haas Grotesk Display Pro', sans-serif;color: #fff;font-weight:600;cursor:default}
-@keyframes scrollText { from {transform:translateX(0%)} to {transform:translateX(-50%)}}
+.index-info .item > a::after {
+    content: " ";
+    background: url(../img/icoIndex1.svg) center center / contain no-repeat;
+    width: 30px;
+    height: 30px;
+}
 
-.nav-info-container {font-family: 'Neue Haas Grotesk Display Pro', sans-serif;color: #fff;display: flex;width: 45%;float: right;}
-.nav-info-container > div {border-left: 3px solid #fff;padding-left: 32px;}
-.nav-info {line-height: 24px;margin-right: 98px;}
-.nav-sm {display: flex;flex-direction: column;justify-content: space-between;}
-.nav-sm a {color: #fff;text-decoration: none;}
-.nav-sm a:last-of-type {margin-bottom: 0;}
+.index-info .video-aktif::after {
+    content: " ";
+    background: url(../img/icoIndex2.svg) center center / contain no-repeat !important;
+    width: 30px;
+    height: 30px;
+}
+
+.index-info .item > a > div {
+    opacity: .5;
+    width: 222px;
+}
+
+.index-info .item > a img {
+    display: none;
+}
+
+.index-info .item > a video {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    display: none;
+    width: 656px;
+    height: 400px;
+}
+
+.owl-carousel {position: unset !important;}
+
+.comm-show .prop {
+    display: none !important;
+}
+
+.prop-show .comm {
+    display: none !important;
+}
+
+.m-scroll {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+    bottom: -30px;
+    width: 100%
+}
+
+.m-scroll__title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap
+}
+
+.m-scroll__title > div {
+    display: flex;
+    animation: scrollText 50s infinite linear
+}
+
+.m-scroll__title h2 {
+    margin: 0;
+    font-size: 328px;
+    color: #bcaf87;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    cursor: default
+}
+
+@keyframes scrollText {from {transform: translateX(0%)} to {transform: translateX(-50%)}}
+
+.nav-info-container {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: #fff;
+    display: flex;
+    width: 45%;
+    margin-top: 56px;
+    margin-left: 65px;
+}
+
+.nav-info-container > div {
+    border-left: 3px solid #fff;
+    padding-left: 32px;
+}
+
+.nav-info {
+    line-height: 24px;
+    margin-right: 98px;
+}
+
+.nav-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-sm a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-sm a:last-of-type {
+    margin-bottom: 0;
+}
+
+.owl-carousel.off {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .show-mobile {
+        display: block !important;
+    }
+
+    .logo {
+        width: 176px;
+        height: 32px;
+    }
+
+    .menu-btn {
+        display: block;
+        float: left;
+        background: url(../img/menu.svg) center center / contain no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+
+    .menu-close {
+        display: block;
+        float: left;
+        background: url(../img/menu-kapat.svg) center center / contain no-repeat;
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-mobile {
+        display: block;
+        position: fixed;
+        z-index: 101;
+        left: -100%;
+        top: 0;
+        padding: 28px;
+        width: 100%;
+        height: calc(100vh);
+        background-color: #0D0D12;
+        z-index: 99999;
+    }
+
+    .nav-mobile .logo {
+        position: absolute;
+        display: block;
+        bottom: 60px;
+    }
+
+    .nav .menu-close, .menu-btn {
+        display: block;
+    }
+
+    .nav > ul {
+        margin-top: 204px;
+    }
+
+    .nav > ul > li {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    .nav > ul > li > a {
+        color: #fff;
+        font-family: Neue Haas Grotesk Display Pro;
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .video-main {
+        margin-top: 120px;
+    }
+
+    .video-main span {
+        font-size: 16px;
+        margin-bottom: 16px;
+        margin-left: 30px;
+    }
+
+    .video-container {
+        width: 95%;
+        margin: 0 auto 16px;
+    }
+
+    .video-main > .video-container:first-of-type {
+        padding-left: 0;
+    }
+
+    .video-container > a {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .video-container > a img {
+        display: block;
+    }
+
+    .video-container > a video {
+        display: none;
+    }
+
+    .nav-info-container {
+        width: 80%;
+        flex-direction: column;
+        margin: 200px auto 0;
+    }
+
+    .nav-info-container > div {
+        padding-left: 0;
+        border-left: none;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 16px;
+        width: 100%;
+        margin-bottom: 40px;
+        margin-right: 0;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .nav-info span {
+        font-size: 40px;
+    }
+
+    .nav-sm a {
+        margin-bottom: 24px;
+    }
+
+    .m-scroll {
+        bottom: 0;
+    }
+
+    .m-scroll__title h2 {
+        font-size: 188px;
+    }
+    .index-container {
+        margin-top: 150px;
+    }
+
+    .index-info-top {
+        display: none;
+    }
+    .index-info {
+        width: 100% !important;
+        max-height: unset;
+    }
+    .index-info .item > a {
+        display: block;
+        padding: 0;
+    }
+    .index-info .item > a img {
+        display: block;
+    }
+    
+    .index-info .item > a video {
+        display: none !important;
+    }
+    .index-info .item > a > div {
+        width: 100%;
+        text-align: right;
+        color: #ffffff80;
+        opacity: 1;
+        margin-top: 20px;
+    }
+    .index-info .item > a > div span {
+        display: inline-block;
+        float: left;
+        color: #fff;
+    }
+    .owl-next {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        background: url(../img/right-arrow.svg) no-repeat center !important;
+        width: 32px;
+        height: 32px;
+        display: block;
+        background-size: contain;
+    }
+    .owl-prev {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+        background: url(../img/left-arrow.svg) no-repeat center !important;
+        width: 32px;
+        height: 32px;
+        display: block;
+        background-size: contain;
+    }
+
+}

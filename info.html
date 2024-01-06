@@ -12,38 +12,46 @@
     <script type="text/javascript" src="script/script.js"></script>
 </head>
 <body>
-    <div class="nav-container">
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="index.html" title="explore">explore</a>
-                </li>
-                <li>
-                    <a href="index2.html" title="index">index</a>
-                </li>
-                <li>
-                    <a class="nav-aktif" href="info.html" title="info">info</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="nav-info-container">
-            <div class="nav-info">
-                Hi, I have been working in the cinema industry for 6 years. 
-                I worked in a workshop that produces props and
-                I have valuable knowledge and experience regarding all types of production
-                I have a project in mind.
-            </div>
-            <div class="nav-sm">
-                <a href="" title="E-Mail">mail@seyfeddininanc.com</a>
-                <a href="" title="Vimeo">Vimeo</a>
-                <a href="" title="Linkedin">Linkedin</a>
-            </div>
+    <header>
+        <div class="nav-container">
+            <a class="menu-btn" onclick="fnSolMenu('.nav');"></a>
+            <a class="logo hide show-mobile" href="index.html" title="homepage"></a>
+            <nav class="nav">
+                <a class="menu-close" onclick="fnSolMenu('.nav');"></a>
+                <ul>
+                    <li>
+                        <a href="index.html" title="explore">explore</a>
+                    </li>
+                    <li>
+                        <a href="index2.html" title="index">index</a>
+                    </li>
+                    <li>
+                        <a class="nav-aktif" href="info.html" title="info">info</a>
+                    </li>
+                </ul>
+                <a class="logo" href="index.html" title="homepage"></a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="nav-info-container">
+        <div class="nav-info">
+            <span>Hi,</span><br class="hide show-mobile"> I'm Seyfettin İnanç, a seasoned production designer from Istanbul, Turkey, specializing in film, TV, stage, costume, and props. My work blends artistic vision with technical finesse, creating immersive experiences. Explore my captivating portfolio!
+        </div>
+        <div class="nav-sm">
+            <a href="" title="E-Mail">mail@seyfeddininanc.com</a>
+            <a href="" title="Vimeo">Vimeo</a>
+            <a href="" title="Linkedin">Linkedin</a>
         </div>
     </div>
 
     <div class="m-scroll">
         <div class="m-scroll__title">
             <div>
+                <h2>
+                    <span>seyfeddin</span>
+                    <span>inanç&nbsp;</span>
+                </h2>
                 <h2>
                     <span>seyfeddin</span>
                     <span>inanç&nbsp;</span>

@@ -6,28 +6,36 @@
     <title>index | seyf. art & prop</title>
 
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/owl.theme.default.min.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/owl.carousel.min.js"></script>
 </head>
 <body>
-    <div class="nav-container">
-        <a class="logo" href="index.html" title="homepage"></a>
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="index.html" title="explore">explore</a>
-                </li>
-                <li>
-                    <a class="nav-aktif" href="index2.html" title="index">index</a>
-                </li>
-                <li>
-                    <a href="info.html" title="info">info</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <div class="nav-container">
+            <a class="menu-btn" onclick="fnSolMenu('.nav');"></a>
+            <a class="logo" href="index.html" title="homepage"></a>
+            <nav class="nav">
+                <a class="menu-close" onclick="fnSolMenu('.nav');"></a>
+                <ul>
+                    <li>
+                        <a href="index.html" title="explore">explore</a>
+                    </li>
+                    <li>
+                        <a class="nav-aktif" href="index2.html" title="index">index</a>
+                    </li>
+                    <li>
+                        <a href="info.html" title="info">info</a>
+                    </li>
+                </ul>
+                <a class="logo" href="index.html" title="homepage"></a>
+            </nav>
+        </div>
+    </header>
     
     <div class="index-container">
         <div class="index-nav">
@@ -35,72 +43,140 @@
             <div class="comm-title" onclick="fnIndex('comm');">commercial</div>
             <div class="prop-title" onclick="fnIndex('prop');">prop</div>
         </div>
-        <div class="index-info">
-            <div class="comm">
-                <div>FIKIRSANAT</div>
-                <div>HEPSİBURADA</div>
-                <div>ŞENOL KORKMAZ</div>
-                <div>PROP MASTER</div>
-                <img src="img/100.jpg" alt="">
+        <div class="index-info-top">
+            <div>Client</div>
+            <div>Project</div>
+            <div>Director</div>
+            <div>Role</div>
+        </div>
+        <div class="index-info owl-carousel owl-theme">
+            <div class="item">
+                <a href="" class="comm">
+                    <img class="img-responsive" src="img/indexM.png" alt="">
+                    <div><span>Client</span>FIKIRSANAT</div>
+                    <div><span>Project</span>HEPSİBURADA</div>
+                    <div><span>Director</span>ŞENOL KORKMAZ</div>
+                    <div><span>Role</span>PROP MASTER</div>
+                    <video playsinline muted src="img/video/Do_Not_Disturb-Fragman.mp4" poster="img/100.jpg"></video>
+                </a>
             </div>
-            <div class="comm">
-                <div>PTOT FILM</div>
-                <div>LETGO</div>
-                <div>ÇAĞATAY KAYA</div>
-                <div>PROP MASTER</div>
-                <img src="img/100.jpg" alt="">
+            <div class="item">
+                <a href="" class="comm">
+                    <img class="img-responsive" src="img/indexM.png" alt="">
+                    <div><span>Client</span>PTOT FILM</div>
+                    <div><span>Project</span>LETGO</div>
+                    <div><span>Director</span>ÇAĞATAY KAYA</div>
+                    <div><span>Role</span>PROP MASTER</div>
+                    <video playsinline muted src="img/video/Do_Not_Disturb-Fragman.mp4" poster="img/100.jpg"></video>
+                </a>
             </div>
-            <div class="comm">
-                <div>NETFLIX</div>
-                <div>DO NOT DISTURB</div>
-                <div>CEM YILMAZ</div>
-                <div>PROP MASTER</div>
-                <img src="img/100.jpg" alt="">
+            <div class="item">
+                <a href="" class="comm">
+                    <img class="img-responsive" src="img/indexM.png" alt="">
+                    <div><span>Client</span>NETFLIX</div>
+                    <div><span>Project</span>DO NOT DISTURB</div>
+                    <div><span>Director</span>CEM YILMAZ</div>
+                    <div><span>Role</span>PROP MASTER</div>
+                    <video playsinline muted src="img/video/Do_Not_Disturb-Fragman.mp4" poster="img/100.jpg"></video>
+                </a>
             </div>
-            <div class="comm">
-                <div>PUBLIC</div>
-                <div>YENİ RAKI</div>
-                <div>TOLGA KARAÇELİK</div>
-                <div>PROP MASTER</div>
-                <img src="img/100.jpg" alt="">
+            <div class="item">
+                <a href="" class="comm">
+                    <img class="img-responsive" src="img/indexM.png" alt="">
+                    <div><span>Client</span>PUBLIC</div>
+                    <div><span>Project</span>YENİ RAKI</div>
+                    <div><span>Director</span>TOLGA KARAÇELİK</div>
+                    <div><span>Role</span>PROP MASTER</div>
+                    <video playsinline muted src="img/video/Do_Not_Disturb-Fragman.mp4" poster="img/100.jpg"></video>
+                </a>
             </div>
-            <div class="comm">
-                <div>2012</div>
-                <div>VAKIFBANK</div>
-                <div>ŞENOL KORKMAZ</div>
-                <div>PROP MASTER</div>
-                <img src="img/100.jpg" alt="">
+            <div class="item">
+                <a href="" class="prop">
+                    <img class="img-responsive" src="img/indexM.png" alt="">
+                    <div><span>Client</span>2012</div>
+                    <div><span>Project</span>VAKIFBANK</div>
+                    <div><span>Director</span>ŞENOL KORKMAZ</div>
+                    <div><span>Role</span>PROP MASTER</div>
+                    <video playsinline muted src="img/video/Do_Not_Disturb-Fragman.mp4" poster="img/100.jpg"></video>
+                </a>
             </div>
-            <div class="comm">
-                <div>FIKIRSANAT</div>
-                <div>ERŞAN KUNERI</div>
-                <div>CEM YILMAZ</div>
-                <div>PROP MASTER</div>
-                <img src="img/100.jpg" alt="">
+            <div class="item">
+                <a href="" class="prop">
+                    <img class="img-responsive" src="img/indexM.png" alt="">
+                    <div><span>Client</span>FIKIRSANAT</div>
+                    <div><span>Project</span>ERŞAN KUNERI</div>
+                    <div><span>Director</span>CEM YILMAZ</div>
+                    <div><span>Role</span>PROP MASTER</div>
+                    <video playsinline muted src="img/video/Do_Not_Disturb-Fragman.mp4" poster="img/100.jpg"></video>
+                </a>
             </div>
-            <div class="comm">
-                <div>FIKIRSANAT</div>
-                <div>ERŞAN KUNERI</div>
-                <div>CEM YILMAZ</div>
-                <div>PROP MASTER</div>
-                <img src="img/100.jpg" alt="">
+            <div class="item">
+                <a href="" class="prop">
+                    <img class="img-responsive" src="img/indexM.png" alt="">
+                    <div><span>Client</span>FIKIRSANAT</div>
+                    <div><span>Project</span>ERŞAN KUNERI</div>
+                    <div><span>Director</span>CEM YILMAZ</div>
+                    <div><span>Role</span>PROP MASTER</div>
+                    <video playsinline muted src="img/video/Do_Not_Disturb-Fragman.mp4" poster="img/100.jpg"></video>
+                </a>
             </div>
-            <div class="comm">
-                <div>FIKIRSANAT</div>
-                <div>ERŞAN KUNERI</div>
-                <div>CEM YILMAZ</div>
-                <div>PROP MASTER</div>
-                <img src="img/100.jpg" alt="">
+            <div class="item">
+                <a href="" class="prop">
+                    <img class="img-responsive" src="img/indexM.png" alt="">
+                    <div><span>Client</span>FIKIRSANAT</div>
+                    <div><span>Project</span>ERŞAN KUNERI</div>
+                    <div><span>Director</span>CEM YILMAZ</div>
+                    <div><span>Role</span>PROP MASTER</div>
+                    <video playsinline muted src="img/video/Do_Not_Disturb-Fragman.mp4" poster="img/100.jpg"></video>
+                </a>
             </div>
-            <div class="comm">
-                <div>FIKIRSANAT</div>
-                <div>ERŞAN KUNERI</div>
-                <div>CEM YILMAZ</div>
-                <div>PROP MASTER</div>
-                <img src="img/100.jpg" alt="">
+            <div class="item">
+                <a href="" class="prop">
+                    <img class="img-responsive" src="img/indexM.png" alt="">
+                    <div><span>Client</span>FIKIRSANAT</div>
+                    <div><span>Project</span>ERŞAN KUNERI</div>
+                    <div><span>Director</span>CEM YILMAZ</div>
+                    <div><span>Role</span>PROP MASTER</div>
+                    <video playsinline muted src="img/video/Do_Not_Disturb-Fragman.mp4" poster="img/100.jpg"></video>
+                </a>
             </div>
         </div>
     </div>
 
+<script>
+    $(function() {
+    var owl = $('.owl-carousel'),
+
+        owlOptions = {
+            loop: false,
+            margin: 30,
+            smartSpeed: 700,
+            nav: true,
+            navText: [' ',' '],
+            items: 1
+        };
+
+    if ( $(window).width() < 1000 ) {
+        var owlActive = owl.owlCarousel(owlOptions);
+    } else {
+        owl.addClass('off');
+    }
+
+    $(window).resize(function() {
+        if ( $(window).width() < 768 ) {
+            if ( $('.owl-carousel').hasClass('off') ) {
+                var owlActive = owl.owlCarousel(owlOptions);
+                owl.removeClass('off');
+            }
+        } else {
+            if ( !$('.owl-carousel').hasClass('off') ) {
+                owl.addClass('off').trigger('destroy.owl.carousel');
+                owl.find('.owl-stage-outer').children(':eq(0)').unwrap();
+            }
+        }
+    });
+    });
+
+</script>
 </body>
 </html>
