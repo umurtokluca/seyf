@@ -436,7 +436,8 @@ body {
     }
 
     .m-scroll {
-        bottom: 0;
+        position: unset;
+        margin-top: -40px;
     }
 
     .m-scroll__title h2 {
