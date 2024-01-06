@@ -353,7 +353,7 @@ body {
     .nav-mobile .logo {
         position: absolute;
         display: block;
-        bottom: 60px;
+        bottom: 80px;
     }
 
     .nav .menu-close, .menu-btn {
@@ -361,7 +361,7 @@ body {
     }
 
     .nav > ul {
-        margin-top: 204px;
+        margin-top: 150px;
     }
 
     .nav > ul > li {
@@ -444,7 +444,7 @@ body {
         font-size: 188px;
     }
     .index-container {
-        margin-top: 150px;
+        margin: 150px auto 50px;
     }
 
     .index-info-top {
