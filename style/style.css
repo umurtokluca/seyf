@@ -91,7 +91,6 @@ body {
     font-weight: 500;
     letter-spacing: 6px;
     display: block;
-    margin-bottom: -20px;
     margin-left: 50px;
 }
 
@@ -121,6 +120,8 @@ body {
     display: inline-block;
     float: none!important;
     width: 30%;
+    width: 590px;
+    height: 360px;
 }
 
 .video-container > a img {
@@ -186,7 +187,7 @@ body {
     background-color: #F04438;
 }
 
-.index-info .item > a {
+.index-info > a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
@@ -195,7 +196,7 @@ body {
     text-decoration: none;
 }
 
-.index-info .item > a::after {
+.index-info > a::after {
     content: " ";
     background: url(../img/icoIndex1.svg) center center / contain no-repeat;
     width: 30px;
@@ -209,22 +210,30 @@ body {
     height: 30px;
 }
 
-.index-info .item > a > div {
+.index-info > a > div {
     opacity: .5;
     width: 222px;
 }
 
-.index-info .item > a img {
+.index-info > a.video-aktif > div {
+    opacity: 1;
+}
+
+.index-info > a img {
     display: none;
 }
 
-.index-info .item > a video {
+.index-info > a video {
+    display: none;
     position: absolute;
     right: 0;
     top: 60px;
-    display: none;
     width: 656px;
     height: 400px;
+}
+
+.index-info > a.video-aktif video {
+    display: block;
 }
 
 .owl-carousel {position: unset !important;}

@@ -1,6 +1,16 @@
 $(document).ready(function() {
-    $('main').on('mousemove', function(e) {
-      $('.video-container a').each(function() {
+    $('.video-main').on('mousemove', function(e) {
+      $('.video-main .video-container a').each(function() {
+        var moving = $(this).data('set');
+        var x = (e.clientX * moving) / 5;
+        // var y = (e.clientY * moving) / 100;
+
+        $(this).css('transform', 'translate(-' + x + 'px)');
+      });
+    });
+
+    $('.video-main2').on('mousemove', function(e) {
+      $('.video-main2 .video-container a').each(function() {
         var moving = $(this).data('set');
         var x = (e.clientX * moving) / 5;
         // var y = (e.clientY * moving) / 100;
@@ -13,19 +23,16 @@ $(document).ready(function() {
   });
 
 $(document).ready(function() {
-  $('.index-info > .item > a').hover(
+  $('.index-info > a').hover(
     function() {
+      $('.index-info > a').removeClass("video-aktif")
       $(this).addClass("video-aktif")
-      $(this).find("div").css('opacity', '1');
-      $(this).find("video").css('display', 'block');
-      {if($(this).find("video").get(0).paused)
+      if ($(".video-aktif")[0]){
         $(this).find("video").get(0).play();
       }
     },
     function() {
       $(this).removeClass("video-aktif")
-      $(this).find("div").css('opacity', '.5');
-      $(this).find("video").css('display', 'none');
       $(this).find("video").get(0).pause();
     }
   );
@@ -83,3 +90,14 @@ else
   $(divObj).animate({ 'left': '0px' }, 500);
 }
 
+$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
