@@ -18,9 +18,22 @@ $(document).ready(function() {
         $(this).css('transform', 'translate(-' + x + 'px)');
       });
     });
-
-
   });
+
+$(document).ready(function() {
+  for (i = 0; i < 5; i++) {
+    $("#owl-slide" + i).owlCarousel({
+      loop: false,
+      margin: 30,
+      smartSpeed: 700,
+      nav: true,
+      navText: [' ',' '],
+      items: 1
+    });
+  }
+});
+
+
 
 $(document).ready(function() {
   $('.index-info > a').hover(
@@ -54,23 +67,31 @@ $(document).ready(function() {
 });
 
 function fnIndex(obj) {
-  if (obj === "comm") {
+  if ($(window).width() > 1000) {
+    if (obj === "comm") {
       $(".index-nav > div").removeClass("aktif");
       $(`.${obj}-title`).addClass("aktif");
       $(".index-info").addClass("comm-show");
       $(".index-info").removeClass("prop-show");
+    }
+    if (obj === "prop") {
+        $(".index-nav > div").removeClass("aktif");
+        $(`.${obj}-title`).addClass("aktif");
+        $(".index-info").addClass("prop-show");
+        $(".index-info").removeClass("comm-show");
+    }
+    if (obj === "all") {
+        $(".index-nav > div").removeClass("aktif");
+        $(`.${obj}-title`).addClass("aktif");
+        $(".index-info").removeClass("prop-show");
+        $(".index-info").removeClass("comm-show");
+    }
   }
-  if (obj === "prop") {
-      $(".index-nav > div").removeClass("aktif");
-      $(`.${obj}-title`).addClass("aktif");
-      $(".index-info").addClass("prop-show");
-      $(".index-info").removeClass("comm-show");
-  }
-  if (obj === "all") {
-      $(".index-nav > div").removeClass("aktif");
-      $(`.${obj}-title`).addClass("aktif");
-      $(".index-info").removeClass("prop-show");
-      $(".index-info").removeClass("comm-show");
+  else {
+    $(".index-nav > div").removeClass("aktif");
+    $(".index-container-mobile > div").removeClass("show-mobile");
+    $(`.${obj}-title`).addClass("aktif");
+    $(`.${obj}-mobile`).addClass("show-mobile");
   }
 }
 
@@ -92,12 +113,10 @@ else
 
 $(document).ready(function() {
 	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
 		type: 'iframe',
 		mainClass: 'mfp-fade',
 		removalDelay: 160,
 		preloader: false,
-
 		fixedContentPos: false
 	});
 });

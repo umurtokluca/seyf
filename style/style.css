@@ -98,6 +98,8 @@ body {
     padding-left: 300px;
 }
 
+
+
 .video-container {
     position: relative;
     margin: 0 auto;
@@ -320,10 +322,22 @@ body {
     display: block;
 }
 
+.index-container-mobile {display: none;}
+
+.footer-sabit {
+    text-align: center;
+    color: #fff;
+    font-family: Neue Haas Grotesk Display Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;opacity: .5;}
+
 @media screen and (max-width: 1000px) {
-    .show-mobile {
-        display: block !important;
-    }
+    .index-container-mobile {display: block;}
+
+    .video-main2 {transform: rotateY(180deg);}
+    .video-main2  a {transform: rotateY(180deg);}
 
     .logo {
         width: 176px;
@@ -386,7 +400,7 @@ body {
     }
 
     .video-main {
-        margin-top: 120px;
+        margin-top: 50px;
     }
 
     .video-main span {
@@ -405,9 +419,9 @@ body {
     }
 
     .video-container > a {
-        width: 100%;
+        width: 90%;
         margin: 0;
-        padding: 0 20px;
+        padding: 0px 10px;
     }
 
     .video-container > a img {
@@ -417,6 +431,7 @@ body {
     .video-container > a video {
         display: none;
     }
+    .nav-container {position: unset;display: table;width: 90%;margin: 30px auto 0;}
 
     .nav-info-container {
         width: 80%;
@@ -453,42 +468,60 @@ body {
         font-size: 188px;
     }
     .index-container {
-        margin: 150px auto 50px;
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .index-container-mobile {
+        margin: 60px auto 10px;
+        position: relative;
+        font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+        color: #fff;
+        font-size: 18px;
+        max-height: unset;
+        width: 90% !important;
     }
 
     .index-info-top {
         display: none;
     }
-    .index-info {
-        width: 100% !important;
-        max-height: unset;
-    }
-    .index-info .item > a {
+    .index-container-mobile .item > a {
         display: block;
         padding: 0;
+        color: #fff;
+        text-decoration: none;
     }
-    .index-info .item > a img {
+    .index-container-mobile .item > a img {
         display: block;
     }
     
-    .index-info .item > a video {
+    .index-container-mobile .item > a video {
         display: none !important;
     }
-    .index-info .item > a > div {
+    .index-container-mobile .item > a > div {
         width: 100%;
         text-align: right;
         color: #ffffff80;
         opacity: 1;
         margin-top: 20px;
     }
-    .index-info .item > a > div span {
+    .index-container-mobile .item > a > div span {
         display: inline-block;
         float: left;
         color: #fff;
     }
+
+    .all-mobile, .prop-mobile, .comm-mobile {
+        display: none !important;
+    }
+    .show-mobile {
+        display: block !important;
+    }
+
+    .owl-dots {margin-top: 34px;}
     .owl-next {
         position: absolute;
-        right: 0;
+        right: 0px;
         bottom: 0;
         z-index: 9;
         background: url(../img/right-arrow.svg) no-repeat center !important;
@@ -499,7 +532,7 @@ body {
     }
     .owl-prev {
         position: absolute;
-        left: 0;
+        left: 0px;
         bottom: 0;
         z-index: 9;
         background: url(../img/left-arrow.svg) no-repeat center !important;
