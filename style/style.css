@@ -345,9 +345,6 @@ body {
 @media screen and (max-width: 1000px) {
     .index-container-mobile {display: block;}
 
-    .video-main2 {transform: rotateY(180deg);}
-    .video-main2  a {transform: rotateY(180deg);}
-
     .logo {
         width: 176px;
         height: 32px;
@@ -443,7 +440,7 @@ body {
     .video-container .item {
         width: 306px;
         height: 310px;
-        padding: 20px;
+        padding: 10px;
     }
     .nav-container {position: unset;display: table;width: 90%;margin: 30px auto 0;}
 
