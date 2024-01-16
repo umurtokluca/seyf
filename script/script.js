@@ -1,24 +1,24 @@
-$(document).ready(function() {
-    $('.video-main').on('mousemove', function(e) {
-      $('.video-main .video-container a').each(function() {
-        var moving = $(this).data('set');
-        var x = (e.clientX * moving) / 5;
-        // var y = (e.clientY * moving) / 100;
+// $(document).ready(function() {
+//     $('.video-main').on('mousemove', function(e) {
+//       $('.video-main .video-container a').each(function() {
+//         var moving = $(this).data('set');
+//         var x = (e.clientX * moving) / 5;
+//         // var y = (e.clientY * moving) / 100;
 
-        $(this).css('transform', 'translate(-' + x + 'px)');
-      });
-    });
+//         $(this).css('transform', 'translate(-' + x + 'px)');
+//       });
+//     });
 
-    $('.video-main2').on('mousemove', function(e) {
-      $('.video-main2 .video-container a').each(function() {
-        var moving = $(this).data('set');
-        var x = (e.clientX * moving) / 5;
-        // var y = (e.clientY * moving) / 100;
+//     $('.video-main2').on('mousemove', function(e) {
+//       $('.video-main2 .video-container a').each(function() {
+//         var moving = $(this).data('set');
+//         var x = (e.clientX * moving) / 5;
+//         // var y = (e.clientY * moving) / 100;
 
-        $(this).css('transform', 'translate(-' + x + 'px)');
-      });
-    });
-  });
+//         $(this).css('transform', 'translate(-' + x + 'px)');
+//       });
+//     });
+//   });
 
 $(document).ready(function() {
   for (i = 0; i < 5; i++) {
@@ -52,7 +52,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('.video-container > a').hover(
+  $('.video-container .item > a').hover(
     function() {
       {if($(this).find("video").get(0).paused)
         $(this).find("video").get(0).play();
@@ -120,3 +120,35 @@ $(document).ready(function() {
 		fixedContentPos: false
 	});
 });
+
+$(document).ready(function() {
+  var owl = $('.owl-carousel');
+  var owl1 = $('#owl-video1');
+  var owl2 = $('#owl-video2');
+  owl.owlCarousel({
+    loop: true,
+    nav: false,
+    dots: false,
+    margin: 124,
+    slideBy: 2,
+    autoWidth: true,
+    stagePadding :50,
+    center: true
+  });
+  owl1.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY > 0) {
+        owl1.trigger('next.owl');
+    } else {
+        owl1.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+  owl2.on('mousewheel', '.owl-stage', function(e) {
+    if (e.deltaY > 0) {
+      owl2.trigger('next.owl');
+    } else {
+      owl2.trigger('prev.owl');
+    }
+    e.preventDefault();
+  });
+})

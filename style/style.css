@@ -92,10 +92,11 @@ body {
     letter-spacing: 6px;
     display: block;
     margin-left: 50px;
+    margin-bottom: 10px;
 }
 
 .video-main > .video-container:first-of-type {
-    padding-left: 300px;
+    padding-left: 100px;
 }
 
 
@@ -117,16 +118,18 @@ body {
     display: none
 }
 
-.video-container > a {
-    margin-right: 124px;
-    display: inline-block;
-    float: none!important;
-    width: 30%;
+.video-container .item {
     width: 590px;
     height: 360px;
 }
 
-.video-container > a img {
+.video-container .item > a {
+    display: inline-block;
+    float: none!important;
+    width: 100%;
+}
+
+.video-container .item > a img {
     display: none;
 }
 
@@ -333,6 +336,12 @@ body {
     font-weight: 500;
     line-height: 18px;opacity: .5;}
 
+@media screen and (max-width: 1650px) {
+    .index-nav {margin-bottom: 500px;}
+    .index-info-top {width: 97%;}
+    .index-info {width: 100% !important;}
+}
+
 @media screen and (max-width: 1000px) {
     .index-container-mobile {display: block;}
 
@@ -481,6 +490,8 @@ body {
         max-height: unset;
         width: 90% !important;
     }
+
+    .index-nav {margin-bottom: 32px;}
 
     .index-info-top {
         display: none;
