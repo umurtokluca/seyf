@@ -123,6 +123,10 @@ body {
     height: 360px;
 }
 
+.video-container .center {
+    margin: 0 124px;
+}
+
 .video-container .item > a {
     display: inline-block;
     float: none!important;
