@@ -129,7 +129,6 @@ $(document).ready(function() {
     loop: true,
     nav: false,
     dots: false,
-    margin: 124,
     slideBy: 2,
     autoWidth: true,
     stagePadding :50,
