@@ -122,31 +122,30 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  var owl = $('.owl-carousel');
-  var owl1 = $('#owl-video1');
-  var owl2 = $('#owl-video2');
+  var owl = $('.video-container');
   owl.owlCarousel({
-    loop: true,
+    // loop: true,
     nav: false,
     dots: false,
-    slideBy: 2,
-    autoWidth: true,
-    stagePadding :50,
-    center: true
-  });
-  owl1.on('mousewheel', '.owl-stage', function (e) {
-    if (e.deltaY > 0) {
-        owl1.trigger('next.owl');
-    } else {
-        owl1.trigger('prev.owl');
+    // slideBy: 2,
+    margin: 124,
+    
+    responsive: {
+      0: {
+        autoWidth: true,
+        margin: 0,
+        items: 1
+      },
+      1000: {
+
+      }
     }
-    e.preventDefault();
-});
-  owl2.on('mousewheel', '.owl-stage', function(e) {
-    if (e.deltaY > 0) {
-      owl2.trigger('next.owl');
+  });
+  owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY < 0) {
+        $(this).trigger('next.owl');
     } else {
-      owl2.trigger('prev.owl');
+        $(this).trigger('prev.owl');
     }
     e.preventDefault();
   });

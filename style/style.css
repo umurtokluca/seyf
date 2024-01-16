@@ -123,10 +123,6 @@ body {
     height: 360px;
 }
 
-.video-container .center {
-    margin: 0 124px;
-}
-
 .video-container .item > a {
     display: inline-block;
     float: none!important;
@@ -437,12 +433,17 @@ body {
         padding: 0px 10px;
     }
 
-    .video-container > a img {
+    .video-container .item > a img {
         display: block;
     }
 
-    .video-container > a video {
+    .video-container .item > a video {
         display: none;
+    }
+    .video-container .item {
+        width: auto;
+        height: auto;
+        padding: 20px;
     }
     .nav-container {position: unset;display: table;width: 90%;margin: 30px auto 0;}
 
