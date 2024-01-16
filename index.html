@@ -8,11 +8,15 @@
     <title>seyf. art & prop</title>
 
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/owl.theme.default.min.css" />
     <link rel="stylesheet" type="text/css" href="style/magnific-popup.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="script/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="script/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="script/jquery.magnific-popup.min.js"></script>
 </head>
 <body>
@@ -40,43 +44,59 @@
 
     <main class="video-main">
         <span>PREVIEW</span>
-        <div class="video-container">
-            <a data-set="2" href="https://www.youtube.com/watch?v=16N4_hjwnvU" class="popup-youtube">
-                <video playsinline muted loop width="100%" height="100%" src="img/video/ayzekle-bir-gece.mp4" poster="img/card/ayzekle-bir-gece.jpg"></video>
-                <img class="img-responsive" src="img/card1M.png" alt="">
-            </a>
-            <a data-set="2" href="https://www.youtube.com/watch?v=6E3pnCd7L3U" class="popup-youtube">
-                <video playsinline muted loop width="100%" height="100%" src="img/video/vakifbank.mp4" poster="img/card/vakifbank.jpg"></video>
-                <img class="img-responsive" src="img/card1M.png" alt="">
-            </a>
-            <a data-set="2" href="">
-                <video playsinline muted loop width="100%" height="100%" src="img/video/hepsiburada.mp4" poster="img/card/hepsiburada.jpg"></video>
-                <img class="img-responsive" src="img/card1M.png" alt="">
-            </a>
-            <a data-set="2" href="">
-                <video playsinline muted loop width="100%" height="100%" src="img/video/alef.mp4" poster="img/card/alef.jpg"></video>
-                <img class="img-responsive" src="img/card1M.png" alt="">
-            </a>
+        <div id="owl-video1" class="video-container owl-carousel owl-theme">
+            <div class="item">
+                <a data-set="2" href="https://www.youtube.com/watch?v=16N4_hjwnvU" class="popup-youtube">
+                    <video playsinline muted loop width="100%" height="100%" src="img/video/ayzekle-bir-gece.mp4" poster="img/card/ayzekle-bir-gece.jpg"></video>
+                    <img class="img-responsive" src="img/card1M.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a data-set="2" href="https://www.youtube.com/watch?v=6E3pnCd7L3U" class="popup-youtube">
+                    <video playsinline muted loop width="100%" height="100%" src="img/video/vakifbank.mp4" poster="img/card/vakifbank.jpg"></video>
+                    <img class="img-responsive" src="img/card1M.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a data-set="2" href="">
+                    <video playsinline muted loop width="100%" height="100%" src="img/video/hepsiburada.mp4" poster="img/card/hepsiburada.jpg"></video>
+                    <img class="img-responsive" src="img/card1M.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a data-set="2" href="">
+                    <video playsinline muted loop width="100%" height="100%" src="img/video/alef.mp4" poster="img/card/alef.jpg"></video>
+                    <img class="img-responsive" src="img/card1M.png" alt="">
+                </a>
+            </div>
         </div>
     </main>
     <main class="video-main2">
-        <div class="video-container">
-            <a data-set="2" href="https://www.youtube.com/watch?v=SzXaPDDlD0Q" class="popup-youtube">
-                <video playsinline muted loop width="100%" height="100%" src="img/video/yeni-raki.mp4" poster="img/card/yeni-raki.jpg"></video>
-                <img class="img-responsive" src="img/card1M.png" alt="">
-            </a>
-            <a data-set="2" href="https://www.youtube.com/watch?v=t3ISUY0l0WQ" class="popup-youtube">
-                <video playsinline muted loop width="100%" height="100%" src="img/video/ottoman.mp4" poster="img/card/ottoman.jpg"></video>
-                <img class="img-responsive" src="img/card1M.png" alt="">
-            </a>
-            <a data-set="2" href="https://www.youtube.com/watch?v=TjgenEQgs3w" class="popup-youtube">
-                <video playsinline muted loop width="100%" height="100%" src="img/video/artema.mp4" poster="img/card/artema.jpg"></video>
-                <img class="img-responsive" src="img/card1M.png" alt="">
-            </a>
-            <a data-set="2" href="https://www.youtube.com/watch?v=cc-KwHZhHos" class="popup-youtube">
-                <video playsinline muted loop width="100%" height="100%" src="img/video/letgo.mp4" poster="img/card/letgo.jpg"></video>
-                <img class="img-responsive" src="img/card1M.png" alt="">
-            </a>
+        <div id="owl-video2" class="video-container owl-carousel owl-theme">
+            <div class="item">
+                <a data-set="2" href="https://www.youtube.com/watch?v=SzXaPDDlD0Q" class="popup-youtube">
+                    <video playsinline muted loop width="100%" height="100%" src="img/video/yeni-raki.mp4" poster="img/card/yeni-raki.jpg"></video>
+                    <img class="img-responsive" src="img/card1M.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a data-set="2" href="https://www.youtube.com/watch?v=t3ISUY0l0WQ" class="popup-youtube">
+                    <video playsinline muted loop width="100%" height="100%" src="img/video/ottoman.mp4" poster="img/card/ottoman.jpg"></video>
+                    <img class="img-responsive" src="img/card1M.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a data-set="2" href="https://www.youtube.com/watch?v=TjgenEQgs3w" class="popup-youtube">
+                    <video playsinline muted loop width="100%" height="100%" src="img/video/artema.mp4" poster="img/card/artema.jpg"></video>
+                    <img class="img-responsive" src="img/card1M.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a data-set="2" href="https://www.youtube.com/watch?v=cc-KwHZhHos" class="popup-youtube">
+                    <video playsinline muted loop width="100%" height="100%" src="img/video/letgo.mp4" poster="img/card/letgo.jpg"></video>
+                    <img class="img-responsive" src="img/card1M.png" alt="">
+                </a>
+            </div>
         </div>
     </main>
 
