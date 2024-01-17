@@ -103,7 +103,7 @@ function fnIndex(obj) {
     $(`.${obj}-title`).addClass("aktif");
     setTimeout(function() { 
       $(`.${obj}-mobile`).addClass('show-mobile')
-  }, 10);
+  }, 50);
     
   }
 }
