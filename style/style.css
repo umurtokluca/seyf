@@ -534,8 +534,7 @@ body {
         visibility: hidden !important;
     }
 
-    .index-container-mobile .owl-carousel {position: absolute !important;}
-    .index-container-mobile .show-mobile .owl-carousel {top: 40px;}
+    .index-container-mobile .owl-carousel {position: absolute !important;top: 40px;}
 
     .show-mobile {
         visibility: visible !important;
