@@ -150,14 +150,15 @@ body {
 .index-nav > div {
     cursor: pointer;
     opacity: .5;
+    margin-right: 24px;
 }
 
 .index-nav > div:hover, .aktif {
     opacity: 1 !important;
 }
 
-.index-nav > div:nth-of-type(2) {
-    margin: 0 24px;
+.index-nav > div:last-of-type {
+    margin-right: 0;
 }
 
 .index-info-top {
@@ -243,13 +244,18 @@ body {
 
 .owl-carousel {position: unset !important;}
 
-.comm-show .prop {
+.comm-show .tv, .comm-show .movie {
     display: none !important;
 }
 
-.prop-show .comm {
+.tv-show .comm, .tv-show .movie {
     display: none !important;
 }
+
+.movie-show .tv, .movie-show .comm {
+    display: none !important;
+}
+
 
 .m-scroll {
     display: flex;
@@ -524,11 +530,15 @@ body {
         color: #fff;
     }
 
-    .all-mobile, .prop-mobile, .comm-mobile {
-        display: none !important;
+    .all-mobile, .tv-mobile, .comm-mobile, .movie-mobile {
+        visibility: hidden !important;
     }
+
+    .index-container-mobile .owl-carousel {position: absolute !important;}
+    .index-container-mobile .show-mobile .owl-carousel {top: 40px;}
+
     .show-mobile {
-        display: block !important;
+        visibility: visible !important;
     }
 
     .owl-dots {margin-top: 34px;}

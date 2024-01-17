@@ -72,19 +72,29 @@ function fnIndex(obj) {
       $(".index-nav > div").removeClass("aktif");
       $(`.${obj}-title`).addClass("aktif");
       $(".index-info").addClass("comm-show");
-      $(".index-info").removeClass("prop-show");
+      $(".index-info").removeClass("tv-show");
+      $(".index-info").removeClass("movie-show");
     }
-    if (obj === "prop") {
+    if (obj === "tv") {
         $(".index-nav > div").removeClass("aktif");
         $(`.${obj}-title`).addClass("aktif");
-        $(".index-info").addClass("prop-show");
+        $(".index-info").addClass("tv-show");
         $(".index-info").removeClass("comm-show");
+        $(".index-info").removeClass("movie-show");
     }
+    if (obj === "movie") {
+      $(".index-nav > div").removeClass("aktif");
+      $(`.${obj}-title`).addClass("aktif");
+      $(".index-info").addClass("movie-show");
+      $(".index-info").removeClass("comm-show");
+      $(".index-info").removeClass("tv-show");
+  }
     if (obj === "all") {
         $(".index-nav > div").removeClass("aktif");
         $(`.${obj}-title`).addClass("aktif");
-        $(".index-info").removeClass("prop-show");
+        $(".index-info").removeClass("tv-show");
         $(".index-info").removeClass("comm-show");
+        $(".index-info").removeClass("movie-show");
     }
   }
   else {

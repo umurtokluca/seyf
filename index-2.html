@@ -45,7 +45,8 @@
         <div class="index-nav">
             <div class="all-title aktif" onclick="fnIndex('all');">all</div>
             <div class="comm-title" onclick="fnIndex('comm');">commercial</div>
-            <div class="prop-title" onclick="fnIndex('prop');">prop</div>
+            <div class="movie-title" onclick="fnIndex('movie');">movie</div>
+            <div class="tv-title" onclick="fnIndex('tv');">tv</div>
         </div>
         <div class="index-info-top">
             <div>Client</div>
@@ -54,7 +55,7 @@
             <div>Role</div>
         </div>
         <div class="index-info">
-                <a href="https://www.youtube.com/watch?v=tCcnnYSkOzk&ab_channel=Hepsiburada" class="comm video-aktif">
+                <a href="https://www.youtube.com/watch?v=tCcnnYSkOzk" class="popup-youtube comm video-aktif">
                     <div>FIKIRSANAT</div>
                     <div>HEPSİBURADA</div>
                     <div>ŞENOL KORKMAZ</div>
@@ -68,7 +69,7 @@
                     <div>PROP MASTER</div>
                     <video playsinline muted loop src="img/video/letgo.mp4" poster="img/card/letgo.jpg"></video>
                 </a>
-                <a href="https://www.youtube.com/watch?v=16N4_hjwnvU" class="popup-youtube prop">
+                <a href="https://www.youtube.com/watch?v=16N4_hjwnvU" class="popup-youtube movie">
                     <div>NETFLIX</div>
                     <div>DO NOT DISTURB</div>
                     <div>CEM YILMAZ</div>
@@ -89,21 +90,21 @@
                     <div>PROP MASTER</div>
                     <video playsinline muted loop src="img/video/vakifbank.mp4" poster="img/card/vakifbank.jpg"></video>
                 </a>
-                <a href="" class="prop">
+                <a href="" class="popup-youtube tv">
                     <div>FIKIRSANAT</div>
                     <div>ERŞAN KUNERI</div>
                     <div>CEM YILMAZ</div>
                     <div>PROP MASTER</div>
                     <video playsinline muted loop src="img/video/.mp4" poster="img/card/ersan-kuneri.jpg"></video>
                 </a>
-                <a href="https://www.youtube.com/watch?v=t3ISUY0l0WQ" class="popup-youtube prop">
+                <a href="https://www.youtube.com/watch?v=t3ISUY0l0WQ" class="popup-youtube tv">
                     <div>KARGA7</div>
                     <div>RISE OF EMPIRES: OTTOMAN</div>
                     <div>EMRE ŞAHİN</div>
                     <div>PROP MAKER</div>
                     <video playsinline muted loop src="img/video/ottoman.mp4" poster="img/card/ottoman.jpg"></video>
                 </a>
-                <a href="https://www.youtube.com/watch?v=GmBCCb7ni60&ab_channel=blutv" class="prop">
+                <a href="https://www.youtube.com/watch?v=GmBCCb7ni60" class="popup-youtube tv">
                     <div>BLU TV</div>
                     <div>ALEF</div>
                     <div>EMİN ALPER</div>
@@ -124,12 +125,14 @@
         <div class="index-nav">
             <div class="all-title aktif" onclick="fnIndex('all');">all</div>
             <div class="comm-title" onclick="fnIndex('comm');">commercial</div>
-            <div class="prop-title" onclick="fnIndex('prop');">prop</div>
+            <div class="movie-title" onclick="fnIndex('movie');">movie</div>
+            <div class="tv-title" onclick="fnIndex('tv');">tv</div>
         </div>
 
-            <div id="owl-slide1" class="owl-carousel owl-theme all-mobile show-mobile">
+        <div class="all-mobile show-mobile">
+            <div id="owl-slide1" class="owl-carousel owl-theme">
                 <div class="item">
-                    <a href="https://www.youtube.com/watch?v=tCcnnYSkOzk&ab_channel=Hepsiburada" class="comm">
+                    <a href="https://www.youtube.com/watch?v=tCcnnYSkOzk" class="comm">
                         <img class="img-responsive" src="img/card/hepsiburadaM.png" alt="">
                         <div><span>Client</span>FIKIRSANAT</div>
                         <div><span>Project</span>HEPSİBURADA</div>
@@ -192,7 +195,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="https://www.youtube.com/watch?v=GmBCCb7ni60&ab_channel=blutv" class="prop">
+                    <a href="https://www.youtube.com/watch?v=GmBCCb7ni60" class="prop">
                         <img class="img-responsive" src="img/card/alefM.png" alt="">
                         <div><span>Client</span>BLU TV</div>
                         <div><span>Project</span>ALEF</div>
@@ -210,21 +213,12 @@
                     </a>
                 </div>
             </div>
-
-
-
-            <div id="owl-slide2" class="owl-carousel owl-theme prop-mobile">
+        </div>
+            
+        <div class="tv-mobile">
+            <div id="owl-slide2" class="owl-carousel owl-theme">
                 <div class="item">
-                    <a href="https://www.youtube.com/watch?v=16N4_hjwnvU" class="popup-youtube prop">
-                        <img class="img-responsive" src="img/card/ayzekle-bir-geceM.png" alt="">
-                        <div><span>Client</span>NETFLIX</div>
-                        <div><span>Project</span>DO NOT DISTURB</div>
-                        <div><span>Director</span>CEM YILMAZ</div>
-                        <div><span>Role</span>PROP MASTER</div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="" class="prop">
+                    <a href="" class="popup-youtube tv">
                         <img class="img-responsive" src="img/card/ersan-kuneriM.png" alt="">
                         <div><span>Client</span>FIKIRSANAT</div>
                         <div><span>Project</span>ERŞAN KUNERI</div>
@@ -233,7 +227,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="https://www.youtube.com/watch?v=t3ISUY0l0WQ" class="popup-youtube prop">
+                    <a href="https://www.youtube.com/watch?v=t3ISUY0l0WQ" class="popup-youtube tv">
                         <img class="img-responsive" src="img/card/ottomanM.png" alt="">
                         <div><span>Client</span>KARGA7</div>
                         <div><span>Project</span>RISE OF EMPIRES: OTTOMAN</div>
@@ -242,7 +236,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="https://www.youtube.com/watch?v=GmBCCb7ni60&ab_channel=blutv" class="prop">
+                    <a href="https://www.youtube.com/watch?v=GmBCCb7ni60" class="popup-youtube tv">
                         <img class="img-responsive" src="img/card/alefM.png" alt="">
                         <div><span>Client</span>BLU TV</div>
                         <div><span>Project</span>ALEF</div>
@@ -251,12 +245,12 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-        
-
-            <div id="owl-slide3" class="owl-carousel owl-theme comm-mobile">
+        <div class="comm-mobile">
+            <div id="owl-slide3" class="owl-carousel owl-theme">
                 <div class="item">
-                    <a href="https://www.youtube.com/watch?v=tCcnnYSkOzk&ab_channel=Hepsiburada" class="comm">
+                    <a href="https://www.youtube.com/watch?v=tCcnnYSkOzk" class="comm">
                         <img class="img-responsive" src="img/card/hepsiburadaM.png" alt="">
                         <div><span>Client</span>FIKIRSANAT</div>
                         <div><span>Project</span>HEPSİBURADA</div>
@@ -301,9 +295,22 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-        
-        
+        <div class="movie-mobile">
+            <div id="owl-slide4" class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="https://www.youtube.com/watch?v=16N4_hjwnvU" class="popup-youtube movie">
+                        <img class="img-responsive" src="img/card/ayzekle-bir-geceM.png" alt="">
+                        <div><span>Client</span>NETFLIX</div>
+                        <div><span>Project</span>DO NOT DISTURB</div>
+                        <div><span>Director</span>CEM YILMAZ</div>
+                        <div><span>Role</span>PROP MASTER</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>
