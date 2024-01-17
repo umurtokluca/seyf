@@ -98,11 +98,12 @@ function fnIndex(obj) {
     }
   }
   else {
-    var test = $(`.${obj}-mobile`).addClass('show-mobile')
     $(".index-nav > div").removeClass("aktif");
     $(".index-container-mobile > div").removeClass("show-mobile");
     $(`.${obj}-title`).addClass("aktif");
-    setTimeout(test, 500);
+    setTimeout(function() { 
+      $(`.${obj}-mobile`).addClass('show-mobile')
+  }, 10);
     
   }
 }
