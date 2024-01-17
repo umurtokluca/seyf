@@ -497,6 +497,8 @@ body {
         font-size: 18px;
         max-height: unset;
         width: 90% !important;
+        overflow: hidden;
+        height: 90vh;
     }
 
     .index-nav {margin-bottom: 32px;}
@@ -532,9 +534,11 @@ body {
 
     .all-mobile, .tv-mobile, .comm-mobile, .movie-mobile {
         visibility: hidden !important;
+        overflow: hidden;
     }
 
-    .index-container-mobile .owl-carousel {position: absolute !important;top: 40px;}
+    .index-container-mobile .owl-carousel {position: absolute !important;top: 9999px;}
+    .index-container-mobile .show-mobile .owl-carousel {position: absolute !important;top: 50px;}
 
     .show-mobile {
         visibility: visible !important;
